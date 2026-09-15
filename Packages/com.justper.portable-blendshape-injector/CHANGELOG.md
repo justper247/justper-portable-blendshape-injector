@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.2 - 2026-09-15
+
+- Removes duplicate legacy scripts when upgrading from the embedded Unity package to VCC.
+- Keeps baked deformation assets, prefabs, and creator-only authoring tools in the old folder.
+
 ## Creator tools - 2026-08-24
 
 - Added a Tool Only Update export option that excludes baked and product assets.
