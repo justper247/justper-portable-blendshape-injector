@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.3 - 2026-09-16
+
+- Hid technical matching thresholds from the normal Inspector.
+- Automatic matching still uses the same recommended limits and safety checks.
+
 ## 1.2.2 - 2026-09-15
 
 - Removes duplicate legacy scripts when upgrading from the embedded Unity package to VCC.

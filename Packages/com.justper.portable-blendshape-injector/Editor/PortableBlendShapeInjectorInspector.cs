@@ -1,5 +1,5 @@
 // ============================================================
-//  Portable BlendShape Injector  (v1.2.1) - inspector
+//  Portable BlendShape Injector  (v1.2.3) - inspector
 //
 //  Customer facing, so it answers one question by default: will
 //  this work when I upload? It checks by actually generating the
@@ -33,12 +33,6 @@ namespace Justper.PortableBlendShapes
         SerializedProperty ignoreRenderersProperty;
         SerializedProperty existingShapesProperty;
         SerializedProperty loggingProperty;
-        SerializedProperty useRecommendedProperty;
-        SerializedProperty matchDistanceProperty;
-        SerializedProperty normalAlignmentProperty;
-        SerializedProperty coverageProperty;
-        SerializedProperty confidenceProperty;
-        SerializedProperty marginProperty;
 
         List<DeformationCheck> checks;
         bool checkedThisSelection;
@@ -86,12 +80,6 @@ namespace Justper.PortableBlendShapes
             ignoreRenderersProperty = serializedObject.FindProperty("ignoreRenderers");
             existingShapesProperty = serializedObject.FindProperty("existingShapes");
             loggingProperty = serializedObject.FindProperty("diagnosticLogging");
-            useRecommendedProperty = serializedObject.FindProperty("useRecommendedTolerances");
-            matchDistanceProperty = serializedObject.FindProperty("maximumMatchDistance");
-            normalAlignmentProperty = serializedObject.FindProperty("minimumNormalAlignment");
-            coverageProperty = serializedObject.FindProperty("minimumDetectionCoverage");
-            confidenceProperty = serializedObject.FindProperty("minimumConfidence");
-            marginProperty = serializedObject.FindProperty("requiredConfidenceMargin");
             checkedThisSelection = false;
         }
 
@@ -337,16 +325,6 @@ namespace Justper.PortableBlendShapes
             EditorGUILayout.PropertyField(ignoreRenderersProperty,
                 new GUIContent("Never Use These Meshes"), true);
             EditorGUILayout.PropertyField(loggingProperty, new GUIContent("Log Details"));
-            EditorGUILayout.PropertyField(useRecommendedProperty,
-                new GUIContent("Use Recommended Limits"));
-            using (new EditorGUI.DisabledScope(useRecommendedProperty.boolValue))
-            {
-                EditorGUILayout.PropertyField(matchDistanceProperty, new GUIContent("Match Distance"));
-                EditorGUILayout.PropertyField(normalAlignmentProperty, new GUIContent("Normal Agreement"));
-            }
-            EditorGUILayout.PropertyField(coverageProperty, new GUIContent("Required Coverage"));
-            EditorGUILayout.PropertyField(confidenceProperty, new GUIContent("Required Confidence"));
-            EditorGUILayout.PropertyField(marginProperty, new GUIContent("Required Lead"));
 
             EditorGUI.indentLevel--;
         }

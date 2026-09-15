@@ -1,5 +1,5 @@
 // ============================================================
-//  Portable BlendShape Injector  (v1.2.1) - runtime marker
+//  Portable BlendShape Injector  (v1.2.3) - runtime marker
 //
 //  Place this next to an accessory that needs the wearer's body
 //  mesh changed. During Play Mode preview and avatar builds the
@@ -39,7 +39,7 @@ namespace Justper.PortableBlendShapes
         , IEditorOnly
 #endif
     {
-        public const string ToolVersion = "1.2.1";
+        public const string ToolVersion = "1.2.3";
 
         public enum OperationMode
         {
