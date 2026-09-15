@@ -1,0 +1,29 @@
+{
+  "name": "Justper.PortableBlendShapeInjector.Editor",
+  "rootNamespace": "Justper.PortableBlendShapes",
+  "references": [
+    "Justper.PortableBlendShapeInjector.Runtime",
+    "Unity.Collections",
+    "VRC.SDKBase",
+    "VRC.SDKBase.Editor",
+    "VRC.SDK3A",
+    "VRC.SDK3A.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [
+    {
+      "name": "com.vrchat.avatars",
+      "expression": "",
+      "define": "VRC_SDK_VRCSDK3"
+    }
+  ],
+  "noEngineReferences": false
+}

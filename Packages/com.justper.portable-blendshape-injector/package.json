@@ -1,0 +1,21 @@
+{
+  "name": "com.justper.portable-blendshape-injector",
+  "displayName": "Justper Portable BlendShape Injector",
+  "version": "1.2.1",
+  "unity": "2022.3",
+  "description": "Adds an accessory's baked correction blendshape to compatible VRChat avatar body meshes.",
+  "author": {
+    "name": "Justper",
+    "email": "justper247@users.noreply.github.com",
+    "url": "https://github.com/justper247"
+  },
+  "license": "LicenseRef-Justper-Proprietary",
+  "url": "https://github.com/justper247/justper-portable-blendshape-injector/releases/download/1.2.1/com.justper.portable-blendshape-injector-1.2.1.zip",
+  "changelogUrl": "https://github.com/justper247/justper-portable-blendshape-injector/blob/main/Packages/com.justper.portable-blendshape-injector/CHANGELOG.md",
+  "dependencies": {
+    "com.unity.collections": "2.1.4"
+  },
+  "vpmDependencies": {
+    "com.vrchat.avatars": "3.10.x"
+  }
+}
