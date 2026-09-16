@@ -4,8 +4,8 @@ Adds baked accessory correction blendshapes to compatible VRChat avatar body mes
 
 [![Add to VCC](https://img.shields.io/badge/Add_to_VCC-1769aa?style=for-the-badge)](https://justper247.github.io/justper-vpm-listing/add.html)
 
-Click **Add to VCC**, then install **Justper Portable BlendShape Injector** from your project's package list.
+Click **Add to VCC** (works with VCC and ALCOM), then install **Justper Portable BlendShape Injector** from your project's package list.
 
-ALCOM users can add this package source:
+Or add this package source manually:
 
 `https://justper247.github.io/justper-vpm-listing/index.json`
